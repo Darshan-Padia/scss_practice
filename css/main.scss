@@ -1,0 +1,29 @@
+@import './variables';
+@import './methods';
+
+.font-gradient {
+    background-image: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(156, 154, 154);
+}
+.main {
+    @include flexCenter();
+    flex-direction: column;
+
+    // header
+    @import './header';
+
+    // content
+    @import './content';
+
+    //footer
+    @import './footer';
+}
+
+// content

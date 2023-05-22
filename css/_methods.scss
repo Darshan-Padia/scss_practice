@@ -1,0 +1,14 @@
+// methods
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+@mixin grid_flex_center($name) {
+    grid-area: $name;
+    display: flex;
+    align-items: center;
+}
+@mixin borderAndRadius {
+    border: 4px solid $border_color;
+    border-radius: $border_radius;
+}

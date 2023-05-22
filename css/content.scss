@@ -1,0 +1,40 @@
+
+@import './methods';
+@import './variables';
+
+.content {
+    @include borderAndRadius();
+    display: grid;
+    height: 700px;
+    width: 1200px;
+    grid-template-areas: "text_content image";
+
+    .text_content {
+        padding-top: 20%;
+        grid-area: text_content;
+
+        .p_ {
+            line-height: 142%;
+            color: rgb(25, 25, 25);
+            padding-left: 10%;
+            font-size: xxx-large;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .inside_text_content {
+            @include flexCenter();
+            justify-content: center;
+            color: white;
+            height: 7%;
+            width: 30%;
+            border: 1px solid rgb(179, 176, 176);
+            border-radius: 40px;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+    }
+
+    .image {
+        grid-area: image;
+    }
+}

@@ -1,0 +1,31 @@
+@import './variables';
+@import './methods';
+
+.footer {
+    @include borderAndRadius();
+    display: grid;
+    height: 100px;
+    width: 1200px;
+    grid-template-areas: "insta twitter youtube name";
+    grid-template-columns: 140px 140px 140px 140px;
+
+    .insta {
+        @include grid_flex_center(insta);
+        justify-content: center;
+    }
+
+    .twitter {
+        @include grid_flex_center(twitter);
+        justify-content: center;
+    }
+
+    .youtube {
+        @include grid_flex_center(youtube);
+        justify-content: center;
+    }
+
+    .name {
+        @include grid_flex_center(name);
+        justify-content: center;
+    }
+}

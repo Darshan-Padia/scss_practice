@@ -1,0 +1,60 @@
+
+@import './methods';
+@import './variables';
+
+.header {
+    @include borderAndRadius();
+    display: grid;
+    height: 100px;
+    width: 1200px;
+    grid-template-areas: "collab Home About Services Contact  Get_Started";
+    grid-template-columns: 200px 100px 100px 100px 400px;
+
+    .collab {
+        display: flex;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: center;
+        grid-area: collab;
+
+        p {
+            font-size: xx-large;
+            background-image: $gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .Home {
+        @include grid_flex_center(Home);
+    }
+    .About {
+        @include grid_flex_center(About);
+    }
+
+    .Services {
+        @include grid_flex_center(Services);
+    }
+
+    .Contact {
+        @include grid_flex_center(Contact);
+    }
+
+    .Get_Started {
+        // background-color: red;
+        grid-area: Get_Started;
+        // padding-left: 500px;
+
+        p {
+            button {
+                color: white;
+                width: 60%;
+                padding: 20px;
+                border: none;
+                border-radius: 40px;
+                background-image: $gradient;
+            }
+        }
+    }
+}

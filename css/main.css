@@ -1,0 +1,139 @@
+.font-gradient {
+  background-image: linear-gradient(to right, rgb(134, 31, 151), rgb(232, 126, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(156, 154, 154);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .header {
+  border: 4px solid red;
+  border-radius: 10px;
+  display: grid;
+  height: 100px;
+  width: 1200px;
+  grid-template-areas: "collab Home About Services Contact  Get_Started";
+  grid-template-columns: 200px 100px 100px 100px 400px;
+}
+.main .header .collab {
+  display: flex;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: center;
+  grid-area: collab;
+}
+.main .header .collab p {
+  font-size: xx-large;
+  background-image: linear-gradient(to right, rgb(134, 31, 151), rgb(232, 126, 7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .header .Home {
+  grid-area: Home;
+  display: flex;
+  align-items: center;
+}
+.main .header .About {
+  grid-area: About;
+  display: flex;
+  align-items: center;
+}
+.main .header .Services {
+  grid-area: Services;
+  display: flex;
+  align-items: center;
+}
+.main .header .Contact {
+  grid-area: Contact;
+  display: flex;
+  align-items: center;
+}
+.main .header .Get_Started {
+  grid-area: Get_Started;
+}
+.main .header .Get_Started p button {
+  color: white;
+  width: 60%;
+  padding: 20px;
+  border: none;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, rgb(134, 31, 151), rgb(232, 126, 7));
+}
+.main .content {
+  border: 4px solid red;
+  border-radius: 10px;
+  display: grid;
+  height: 700px;
+  width: 1200px;
+  grid-template-areas: "text_content image";
+}
+.main .content .text_content {
+  padding-top: 20%;
+  grid-area: text_content;
+}
+.main .content .text_content .p_ {
+  line-height: 142%;
+  color: rgb(25, 25, 25);
+  padding-left: 10%;
+  font-size: xxx-large;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.main .content .text_content .inside_text_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 7%;
+  width: 30%;
+  border: 1px solid rgb(179, 176, 176);
+  border-radius: 40px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.main .content .image {
+  grid-area: image;
+}
+.main .footer {
+  border: 4px solid red;
+  border-radius: 10px;
+  display: grid;
+  height: 100px;
+  width: 1200px;
+  grid-template-areas: "insta twitter youtube name";
+  grid-template-columns: 140px 140px 140px 140px;
+}
+.main .footer .insta {
+  grid-area: insta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .footer .twitter {
+  grid-area: twitter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .footer .youtube {
+  grid-area: youtube;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .footer .name {
+  grid-area: name;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
