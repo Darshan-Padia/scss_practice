@@ -1,0 +1,38 @@
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_div {
+  background-color: white;
+  height: 800%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.main_div .sub_dvis {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  background-color: rgba(207, 201, 201, 0.568627451);
+  border-radius: 10px;
+  height: 7px;
+  width: 70%;
+  margin: 20px;
+  padding: 20px;
+}
+.main_div .sub_dvis_circle {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  background-color: rgba(207, 201, 201, 0.568627451);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */
